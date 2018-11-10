@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}
+
+\usepackage{geometry,multicol,xspace}	% Pacote para configuração da página
+\usepackage{siunitx}					% Pacote para impressão de unidades físicas do sistema internacional
+\usepackage{pgffor}	
+\usepackage{fp}
+\usepackage[box, completemulti,nowatermark,insidebox, lang=BR]{automultiplechoice}
+
+
+\def\AMCOpen{\hfill\AMCformatChoices{\AMCopenShow}{\AMCopenHide}}
+
+\usepackage{subfigure} 					% Pacote para manipulação de figuras
+\usepackage{graphicx}  					% Pacote para manipulação de gráficos
+\usepackage{circuitikz}					% Pacote para desenho de circuitos elétricos
+\usepackage{mdframed}					% Pacote para desenho de "frames" ao redor de textos
+\usepackage{multirow}					% Pacote para elaboração de tabelas com células multi-linhas
+\usepackage{datatool}					% Pacote para leitura da base de dados
+\usepackage[utf8]{inputenc}				% Pacote para texto em UTF-8
+\usepackage[T1]{fontenc}	
+\usepackage[english,brazilian]{babel}	% Dicionário de português
+\usepackage{enumerate}
+\usepackage{multicol}
+
+% Configuração do parágrafo
+\parindent=0in
+\begin{document}
+	\onecopy{1}{
+
+\begin{center}
+\bf Example Exam - Basic Electricity, 08/10/2018
+
+\vspace{15pt}
+
+\namefield{\fbox{
+\begin{minipage}{1.\linewidth}
+\vspace*{0.7cm}
+Name:
+\vspace*{0.2cm}\dotfill
+%\vspace*{-1mm}
+\end{minipage}
+}}
+
+\vspace{15pt}
+Student ID:
+
+\vspace{15pt}
+\AMCcode{AMCid}{8}
+\vspace{15pt}
+\end{center}
+
+
+	\input{ExamExample1.tex}
+  \clearpage
+  ~\clearpage
+}
+
+\end{document}
